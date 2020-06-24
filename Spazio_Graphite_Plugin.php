@@ -39,7 +39,7 @@ if( !defined( 'Spazio_Graphite_Plugin_C' ) ) {exit();};*/
 //add_action( 'login_enqueue_scripts', 'spazio_graphite_login_logo' );
 //add_action( 'admin_enqueue_scripts', 'spazio_graphite_login_logo' );
 //add_action( 'wp_enqueue_scripts', 'spazio_graphite_login_logo' );
-include_once('updater.php');
+include_once( dirname( __FILE__ ) .'/updater.php');
 //* Personalizzare l'immagine nella pagina di login 
   function custom_loginlogo() { 
   	echo '<style type="text/css"> h1 a {background-image: url(';
