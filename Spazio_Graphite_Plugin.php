@@ -3,7 +3,7 @@
  * Plugin Name: Spazio_Graphite_Plugin
  * Plugin URI: https://github.com/bissanti/Spazio_Graphite_Plugin
  * Description: A Spazio Graphite Plugins collection
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Roberto Bissanti
  * Author URI: https://studiobissanti.com
  * License: GPL2
@@ -73,7 +73,7 @@ if (is_admin()) { // note the use of is_admin() to double check that this is hap
 			'requires' => '3.0', // which version of WordPress does your plugin require?
 			'tested' => '3.3', // which version of WordPress is your plugin tested up to?
 			'readme' => 'README.md', // which file to use as the readme for the version number
-			'access_token' => '77d5e10bad2e6a09dc647695147f6d230c28a3f8', // Access private repositories by authorizing under Appearance > GitHub Updates when this example plugin is installed
+			'access_token' => '', // Access private repositories by authorizing under Appearance > GitHub Updates when this example plugin is installed
 		);
 		new WP_GitHub_Updater($config);
 	}
