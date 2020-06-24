@@ -3,7 +3,7 @@
  * Plugin Name: Spazio_Graphite_Plugin
  * Plugin URI: https://github.com/bissanti/Spazio_Graphite_Plugin
  * Description: A Spazio Graphite Plugins collection
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Roberto Bissanti
  * Author URI: https://studiobissanti.com
  * License: GPL2
@@ -65,7 +65,7 @@ if (is_admin()) { // note the use of is_admin() to double check that this is hap
 		$config = array(
 			'slug' => plugin_basename(__FILE__), // this is the slug of your plugin
 			'proper_folder_name' => 'Spazio_Graphite_Plugin', // this is the name of the folder your plugin lives in
-			'api_url' => 'https://api.github.com/bissanti/repos', // the GitHub API url of your GitHub repo
+			'api_url' => 'https://api.github.com/repos/bissanti/Spazio_Graphite_Plugin', // the GitHub API url of your GitHub repo
 			'raw_url' => 'https://raw.github.com/bissanti/Spazio_Graphite_Plugin/master', // the GitHub raw url of your GitHub repo
 			'github_url' => 'https://github.com/bissanti/Spazio_Graphite_Plugin', // the GitHub url of your GitHub repo
 			'zip_url' => 'https://github.com/bissanti/Spazio_Graphite_Plugin/zipball/master', // the zip url of the GitHub repo
