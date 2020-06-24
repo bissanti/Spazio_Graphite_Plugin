@@ -2,12 +2,25 @@
 /**
  * Plugin Name: Spazio_Graphite_Plugin
  * Plugin URI: https://github.com/bissanti/Spazio_Graphite_Plugin
- * Description: A Spazio-graphite 
- * Version: 0.1.0
+ * Description: A Spazio Graphite Plugins collection
+ * Version: 0.1.2
  * Author: Roberto Bissanti
  * Author URI: https://studiobissanti.com
- *
+ * License: GPL2
  * @package Spazio_Graphite_Plugin
+ *
+ * Spazio_Graphite_Plugin is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * any later version.
+ *  
+ * Spazio_Graphite_Plugin is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *  
+ * You should have received a copy of the GNU General Public License
+ * along with Spazio_Graphite_Plugin. If not, see {URI to Plugin License}.
  */
 
 /*define( 'Spazio_Graphite_Plugin_C', '1' );
