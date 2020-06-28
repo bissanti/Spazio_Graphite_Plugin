@@ -3,7 +3,7 @@
  * Plugin Name: Spazio_Graphite_Plugin
  * Plugin URI: https://github.com/bissanti/Spazio_Graphite_Plugin
  * Description: A Spazio Graphite Plugins collection
- * Version: 1.0.7å
+ * Version: 1.1
  * Author: Roberto Bissanti
  * Author URI: https://studiobissanti.com
  * License: GPL2
