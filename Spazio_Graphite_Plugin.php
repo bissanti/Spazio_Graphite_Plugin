@@ -41,7 +41,7 @@ $config = array(
 		'requires' => '3.0', // specificare quale versione di WordPress e' richiesta da questo plugin 
 		'tested' => '3.3', // fino a che versione di WordPress hai testato il plugin? 
 		'readme' => 'README.md', // quale file deve essere usato per controllare la versione del plugin? 
-		'access_token' => '', // serve soltanto quando utilizziamo repository WordPress privati 
+		'access_token' => 'b3c167ad23503a34b9ccfa359471542c3fb3c09b', // serve soltanto quando utilizziamo repository WordPress privati 
 	); 
 
 	new WP_GitHub_Updater($config); 
