@@ -1,3 +1,3 @@
 # Spazio_Graphite_Plugins
-`~Current Version:1.0.6~`
+`~Current Version:1.0.7~`
  
