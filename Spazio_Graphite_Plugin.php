@@ -3,7 +3,7 @@
  * Plugin Name: Spazio_Graphite_Plugin
  * Plugin URI: https://github.com/bissanti/Spazio_Graphite_Plugin
  * Description: A Spazio Graphite Plugins collection
- * Version:1.2
+ * Version:1.3
  * Author: Roberto Bissanti
  * Author URI: https://studiobissanti.com
  * License: GPL2
@@ -27,24 +27,28 @@
 if( !defined( 'Spazio_Graphite_Plugin_C' ) ) {exit();};*/
 
 
-include_once( 'inc/updater.php');
 /*github updater*/
-if (is_admin()) {
-$config = array( 
-		'slug' => plugin_basename(__FILE__), // l'abbreviazione del plugin 
-		'proper_folder_name' => 'Spazio_Graphite_Plugin', // il nome della cartella che contiene il nostro plugin 
-		'api_url' => 'http://api.github.com/repos/bissanti/Spazio_Graphite_Plugin', // la GitHub API url del repository contenente il plugin 
-		'raw_url' => 'http://raw.github.com/bissanti/Spazio_Graphite_Plugin/master', // la GitHub raw url del repository contenente il plugin 
-		'github_url' => 'http://github.com/bissanti/Spazio_Graphite_Plugin', // la GitHub url del repository contenente il plugin 
-		'zip_url' => 'http://github.com/bissanti/Spazio_Graphite_Plugin/zipball/master', // dove si trova l'archivio .zip del repository 
-		'sslverify' => true, // se WordPress deve utilizzare un certificato SSL quando effettua il controllo sull'aggiornamento 
-		'requires' => '3.0', // specificare quale versione di WordPress e' richiesta da questo plugin 
-		'tested' => '3.3', // fino a che versione di WordPress hai testato il plugin? 
-		'readme' => 'README.md', // quale file deve essere usato per controllare la versione del plugin? 
-		'access_token' => '', // serve soltanto quando utilizziamo repository WordPress privati 
-	); 
+add_action( 'init', 'github_plugin_updater_test_init' );
+function github_plugin_updater_test_init() {
+	include_once( 'inc/updater.php');
 
-	new WP_GitHub_Updater($config); 
+	if (is_admin()) {
+	$config = array( 
+			'slug' => plugin_basename(__FILE__), // l'abbreviazione del plugin 
+			'proper_folder_name' => 'Spazio_Graphite_Plugin', // il nome della cartella che contiene il nostro plugin 
+			'api_url' => 'http://api.github.com/repos/bissanti/Spazio_Graphite_Plugin', // la GitHub API url del repository contenente il plugin 
+			'raw_url' => 'http://raw.github.com/bissanti/Spazio_Graphite_Plugin/master', // la GitHub raw url del repository contenente il plugin 
+			'github_url' => 'http://github.com/bissanti/Spazio_Graphite_Plugin', // la GitHub url del repository contenente il plugin 
+			'zip_url' => 'http://github.com/bissanti/Spazio_Graphite_Plugin/zipball/master', // dove si trova l'archivio .zip del repository 
+			'sslverify' => true, // se WordPress deve utilizzare un certificato SSL quando effettua il controllo sull'aggiornamento 
+			'requires' => '3.0', // specificare quale versione di WordPress e' richiesta da questo plugin 
+			'tested' => '3.3', // fino a che versione di WordPress hai testato il plugin? 
+			'readme' => 'README.md', // quale file deve essere usato per controllare la versione del plugin? 
+			'access_token' => '', // serve soltanto quando utilizziamo repository WordPress privati 
+		); 
+
+		new WP_GitHub_Updater($config); 
+	}
 }
 /*end github updater*/
 
