@@ -3,7 +3,7 @@
  * Plugin Name: Spazio_Graphite_Plugin
  * Plugin URI: https://github.com/bissanti/Spazio_Graphite_Plugin
  * Description: A Spazio Graphite Plugins collection
- * Version:1.3
+ * Version:1.4
  * Author: Roberto Bissanti
  * Author URI: https://studiobissanti.com
  * License: GPL2
@@ -41,7 +41,7 @@ function github_plugin_updater_test_init() {
 			'api_url' => 'http://api.github.com/repos/bissanti/Spazio_Graphite_Plugin', // la GitHub API url del repository contenente il plugin 
 			'raw_url' => 'http://raw.github.com/bissanti/Spazio_Graphite_Plugin/master', // la GitHub raw url del repository contenente il plugin 
 			'github_url' => 'http://github.com/bissanti/Spazio_Graphite_Plugin', // la GitHub url del repository contenente il plugin 
-			'zip_url' => 'http://github.com/bissanti/Spazio_Graphite_Plugin/zipball/master.zip', // dove si trova l'archivio .zip del repository 
+			'zip_url' => 'http://github.com/bissanti/Spazio_Graphite_Plugin/zipball/master', // dove si trova l'archivio .zip del repository 
 			'sslverify' => true, // se WordPress deve utilizzare un certificato SSL quando effettua il controllo sull'aggiornamento 
 			'requires' => '3.3', // specificare quale versione di WordPress e' richiesta da questo plugin 
 			'tested' => '3.3', // fino a che versione di WordPress hai testato il plugin? 
